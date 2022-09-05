@@ -1,0 +1,184 @@
+:root {
+    --darkestGreen: #00474a;
+    --darkGreen: #00595c;
+    --green: #006f73;
+    --yellow: #ffd333;
+}
+
+
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  ::-webkit-scrollbar-track {
+    background:#006f7381; 
+  }
+  ::-webkit-scrollbar-thumb {
+    background:#137d81; 
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: #8ec5c7; 
+  }
+
+body {
+    background-color: var(--green);
+    padding: 30px;
+}
+
+h1 {
+    color: #ffd333;
+    text-shadow: 5px 5px 0 var(--darkGreen);
+    font-family: "Anton", sans-serif;
+    letter-spacing: 0.5rem;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 3rem;
+}
+
+h2 {
+    font-family: "Silkscreen", cursive;
+    text-align: center;
+    color: white;
+    text-shadow: 5px 5px 0 var(--darkGreen);
+}
+.contentBox {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+form#memeGenerator {
+    left: -20px;
+    position: relative;
+    max-width: 40%;
+    height: 400px;
+    background-color: #00595c;
+    padding: 3rem;
+    line-height: 3rem;
+    box-shadow: 5px 5px 0 var(--darkestGreen);
+    margin: 40px
+}
+
+.userInputs label {
+    font-family: "Cutive Mono", monospace;
+    font-size: 2rem;
+    color: var(--yellow);
+    text-shadow: 2px 2px 0 var(--darkestGreen);
+}
+
+.userInputs input {
+    font-family: "Cutive Mono", monospace;
+    width: 100%;
+    height: 20px;
+    float: right;
+    background-color: #ffd333;
+    border-color: var(--darkestGreen);
+    border-style: inset;
+    color: var(--darkestGreen);
+    font-size: 1.25rem;
+}
+
+.userInputs input:focus {
+    outline: 2px solid var(--yellow);
+}
+
+#submitButton {
+    background-color: transparent;
+    font-family: "Silkscreen", cursive;
+    color: white;
+    font-size: 1.5rem;
+    position: relative;
+    top: 25px;
+    float: right;
+    height: 40px;
+    width: 150px;
+    border: 3px solid var(--green);
+    transition: all .5s ease;
+
+}
+
+
+#submitButton:hover {
+    color: var(--darkGreen);
+    background-color: #ffd333;
+    border: none;
+    text-shadow: text-shadow: 5px 5px 0 var(var(--green));
+}
+
+#memeLibrary {
+    position: relative;
+    height: 400px;
+    float: right;
+    min-width: 40%;
+    max-width: 40%;
+    background-color: #00595c;
+    padding: 3rem;
+    box-shadow: 5px 5px 0 var(--darkestGreen);
+    overflow: auto;
+}
+.newMeme{
+    
+    margin: 20px;
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    max-height: 300px;
+    padding-top: 20px; 
+}
+.newMeme img{
+    border: 3px solid white;
+    
+    display: flex;
+    position: relative;
+    max-height: 300px;
+    z-index: 1;
+}
+
+.newMeme .topFont{
+    top: 3.75rem;
+    display: flex;
+    width: 90%;
+    position: relative;
+    color: white;
+    text-transform: uppercase;
+    font-size: 2em;
+    font-size: ;
+    -webkit-text-stroke-width: 1px ;
+    -webkit-text-stroke-color: black;
+    z-index: 2;   
+    font-family: "Anton", sans-serif;
+    justify-content: center;
+}
+.newMeme .btmFont{
+    bottom: 3.75rem;
+    display: flex;
+    width: 100%;
+    position: relative;
+    color: white;
+    text-transform: uppercase;
+    font-size: 2em;
+    -webkit-text-stroke-width: 1px ;
+    -webkit-text-stroke-color: black;
+    z-index: 2;   
+    font-family: "Anton", sans-serif;
+    justify-content: center;
+}
+
+
+.newMeme .remove {
+    background-color:#00595c34;
+    font-family: "Silkscreen", cursive;
+    color: white;
+    font-size: 3rem;
+    position: absolute;
+    align-items: center;
+    z-index: 3;
+    border: 3px solid var(--green);
+    opacity: 0;
+    transition: opacity .5s ease;
+}
+
+.newMeme .remove:hover {
+    opacity: 1;
+    z-index: 3;
+}

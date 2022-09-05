@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Meme Generator</title>
+    <link rel="stylesheet" href="app.css" />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Anton&family=Bungee&family=Cutive+Mono&family=Silkscreen&display=swap");
+    </style>
+  </head>
+  <body>
+    <h1>I want memes plz</h1>
+    <h2>Fill out the form to generate some juicy memes!</h2>
+    <div class="contentBox">
+      <form id="memeGenerator">
+        <div class="userInputs">
+          <label for="add-url">image url</label>
+          <input type="text" id="imageURL" autocomplete="off" />
+        </div>
+        <div class="userInputs">
+          <label for="top-text">top text</label>
+          <input type="text" id="topText" autocomplete="off" />
+        </div>
+        <div class="userInputs">
+          <label for="bottom-text">bottom text</label>
+          <input type="text" id="bottomText" autocomplete="off" />
+        </div>
+        <button id="submitButton">Memeify</button>
+      </form>
+      <div id="memeLibrary"></div>
+    </div>
+  </body>
+  <script src="script.js"></script>
+</html>
